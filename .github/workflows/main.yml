@@ -1,0 +1,17 @@
+
+name: Serce Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Pokaz komunikat
+      run: echo "Workflow działa poprawnie!"
